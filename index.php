@@ -78,7 +78,8 @@ E allora ti saluto, bella stronza, eh";
 
   $canzone_new = str_replace($parolaccia, '***', $canzone);
 
-  // $masini_felice = "";
+  $masini_felice = "https://www.noidegli8090.com/wp-content/uploads/2019/08/1546867257986.jpg-marco_masini_in_lizza__amici_o_the_voice__rai_o_mediaset__questo_e_il_dilemma_.jpg";
+  $masini_triste = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJwzW5v5RJjy3pkKN5tvvCZusPhYYeq2Lltg&usqp=CAU";
  ?>
 
 <!DOCTYPE html>
@@ -115,6 +116,16 @@ E allora ti saluto, bella stronza, eh";
        <?php } else {  ?>
          <img src="https://www.noidegli8090.com/wp-content/uploads/2019/08/1546867257986.jpg-marco_masini_in_lizza__amici_o_the_voice__rai_o_mediaset__questo_e_il_dilemma_.jpg" alt="">
       <?php }; ?>
+
+
+      <img  src="<?php if ($parolaccia == "stronza") { ?>
+
+       <?php echo $masini_triste ?>
+
+     <?php } else {  ?>
+       <?php echo $masini_felice ?>
+    <?php }; ?>" alt="">
+
       </div>
 
     </div>
